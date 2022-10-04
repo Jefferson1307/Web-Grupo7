@@ -1,0 +1,311 @@
+/*Fuente Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+* {
+	/*Elimina los márgenes y espaciados predeterminados*/
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------
+Selector de estilo HTML
+------------------------*/
+body {
+	/*font-family: Trebuchet MS; /*Tipo de letra*/
+	line-height: 1.5; /*Interlineado*/
+	/* background-image: url(imagenes/vuelo.png); */
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/*Aplicar a todos los h1 los siguientes estilos*/
+h1{
+	font-size: 72px;
+	padding-bottom: 5px;
+	color: #40CFFF;
+    font-weight: 800;
+}
+
+/*Aplicar a todos los h2 los siguientes estilos*/
+h2 {
+	font-size: 36px;
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+/*Aplicar a todos los h3 los siguientes estilos*/
+h3 {
+	font-weight: 600;
+}
+
+/* Añade espacio en todos los párrafos y la fuente */
+p{
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------------
+Selector de estilo ID
+------------------------*/
+
+/*En la seccion cabecera, todas las imagenes se acoplan a un 30% de su contenedor*/
+#cabecera img{
+	width: 30%;
+	padding-top: 25px;
+}
+
+/* En cabecera, aplicamos color de fondo y texto, además de agrandar la caja */
+#cabecera {
+	background-color: #fff; /*Color negro*/
+	color: #000; /*Color blanco*/
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/* Aplicamos en nosotros una imagen de fondo que va a estar opaca*/
+#nosotros {
+	/*background-color: rgb(29, 38, 48);*/
+	background-image: linear-gradient(rgba(5, 7, 12, 0.75),
+	rgba(5, 7, 12, 0.75)), url(../imagenes/fondo.jpg); /*el liner opaca la imagen de fondo*/
+	color: #fff;
+}
+
+/* A los h3 de nosotros, los centramos y aumentamos tamaño */
+#nosotros h3{
+	font-size: 40px;
+	text-align: center;
+	/* font-family: fantasy; */
+}
+
+/* Empuja toda la lista en nosotros a la derecha */
+#nosotros li{
+	margin-left: 18px;
+}
+
+/* Efectos al fondo de proposito */
+#proposito{
+	/* background-color: #92D0DB; */
+	/*background-color: rgb(116, 148, 163);*/
+	background-color: #5BA9D9;
+	/* color: #fff; */
+	color: #000;
+}
+
+/* Todas las imagenes en proposito ocuparan todo el espacio de su contenedor */
+#proposito img{
+	width: 100%;
+}
+
+/* Efectos al fondo en mision */
+#mision{
+	background-color: #d7d9d9;
+	color: #000;
+}
+
+/* Centra el texto en sus cajas y cambia la fuente */
+#mision p{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Efectos al fondo en lugares */
+#lugares {
+	background-color: #A0BDC1;
+	color: #000;
+}
+
+/* Efectos al pie de pagina y cambio de fuente */
+#pie{
+	background-color: #000;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Todos los h3 en pie de pagina aumentarán de tamaño*/
+#pie h3{
+	font-size: 20px;
+}
+
+/* Los contenedores en el pie, se reducirá su tamaño*/
+#pie .contenedor {
+	text-align: left;
+	font-size: 12px;
+}
+
+/*Añade bordes a las tablas*/
+#tabla tbody tr td{
+	border: 1px solid #000;
+}
+
+/*En la cabecera de la tabla, añade color y más espacio*/
+.tabla thead tr th{
+	text-align: left;
+	background-color: #000;
+	color: #fff;
+	padding: 8px;
+}
+
+/*Aplica efectos en redes*/
+#redes {
+	background-color: rgb(6, 83, 184);
+	color: #fff;
+	width: auto;
+}
+
+/*Efectos para marquesina (el texto movible)*/
+#marquesina {
+	/* tamaño  */
+	font-size: 40px;
+	/* color */
+	color: #011629;
+	/* espaciado al contenedor */
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Efectos al fondo en tabla */
+#tabla {
+	background-color: #fff;
+	color: #000;
+}
+
+/* Efectos al fondo en ubicanos */
+#ubicanos {
+	background-color: rgb(68, 85, 94);
+	color: #000;
+}
+
+/*ajustes  de la seccion menu*/
+#menu {
+	background-color: rgb(43, 43, 43);
+	color: rgb(255, 255, 255);
+	/*Grosor*/
+	font-weight: 400;
+}
+
+/*-----------------------
+Selector de estilo CLASS
+------------------------*/
+
+/*Efectos para todas las clases fila*/
+.fila {
+	display: flex;
+	flex-direction: row;
+}
+
+/*Efectos para todas las clases columna*/
+.columna {
+	flex-basis: 0;
+	flex-grow: 1;
+
+	margin-left: 5px;
+	margin-right: 5px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Efectos para todas las clases espaciado */
+.espaciado{
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+}
+
+/* Efectos para todos los contenedores */
+.contenedor{
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Configurar imagenes */
+.ajuste_img {
+	width: 100%;/*/configurar el ancho cuadrandolo en su caja contenedora, ya no al 100% de su tamaño real*/
+}
+
+/* Efectos para todas las clases tabla que usaremos */
+.tabla{
+	width: 100%;
+	border: 5px solid #fff;
+	/*padding: 5px;*/
+}
+
+/* A todas las clases tablas, añadir efectos a su contenido en tBody */
+.tabla tbody tr td{
+	/*border-bottom: 5px solid #fff;*/
+	padding: 5px;
+}
+
+/* Efectos para todas las cabeceras en las tablas */
+.tabla thead th{
+	/*border-bottom: 5px solid #fff;*/
+	padding: 5px;
+}
+
+/* Efectos para todo el cuerpo en las tablas */
+.tabla tbody td:hover{
+	padding-bottom: solid 1px rgb(255, 255, 255);
+	background: rgb(177, 200, 230);
+}
+
+.prueba{
+	width: 45%;
+	padding-top: 15px;
+	padding-left: 120px;
+	padding-right: auto;
+}
+
+/* Clase centro para usar y centrar cualquier contenedor u otros */
+.center {
+	text-align: center;
+}
+
+/* Efectos para la seccion redes */
+.ajuste_redes {
+	width: 100%;	
+	height: 400px;
+}
+
+/* Efectos para la seccion mapa */
+.ajuste_mapa {
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+/*Efectos para el menu*/
+.menu_barra	{
+	list-style-type: none;
+	
+	/* activar flexbox */
+	display: flex;
+	flex-direction: row;
+
+	/* espacio proporcional entre las opciones del menu */
+	justify-content: space-evenly;
+}
+
+
+/*Efectos para list item*/
+.menu_barra li a{
+	display: block; /*Convierte un elemento de linea en un contenedor*/
+	/*padding-top: 20px;
+	padding-bottom: 20px;*/
+	padding: 20px;
+	border-bottom: 3px solid transparent;
+	color: #99baf8;
+	text-decoration: none;
+}
+
+/*Efecto de seleccion de list item*/
+.menu_barra li a:hover{
+	background-color: #c4c4c4;
+	color: #000;
+	border-bottom: 3px solid #000;
+}

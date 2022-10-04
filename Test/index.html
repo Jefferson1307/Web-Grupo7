@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Cloudy Airline</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<!-- <body background="imagenes/vuelo.png"> -->
+<body>
+	<!-- <audio controls> -->
+	<audio autoplay loop>
+		<source src="sonido/audio-web.mp3" type="audio/mp3"> <!-- type busca el code de sonido -->
+	</audio><!-- fin audio-->
+
+	
+		<!-- barra de menu principal -->
+
+		<nav id="menu">
+			<div class="contenedor">
+				<ul class="menu_barra">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#nosotros">Sobre Cloud</a></li>
+					<li><a href="#mision">Mision y Vision</a></li>
+					<li><a href="#lugares">Destinos</a></li>
+					<li><a href="#ubicanos">Ubicanos</a></li>
+					<li><a href="#pie">Contactanos</a></li>
+				</ul><!--Fin menu barra-->
+			</div> <!-- fin contenedor-->
+		</nav>
+		<!--Fin menu -->
+	
+
+	<header id="cabecera">
+		<div class="contenedor">
+			<div class="fila">
+				<div class="columna"> <!-- Columna Izquierda -->
+					<h1>Cloud Fly</h1>
+					<p>En cada uno de nuestros viajes, sentirte en las nubes sera parte una rutina</p>
+				</div><!-- Columna Izquierda -->
+				<div class="columna"><!-- Columna Derecha -->
+					<img src="imagenes/nube.png" alt="nube">
+				</div><!-- Columna Derecha -->
+			</div><!-- Fila -->
+					
+		</div><!-- contenedor -->
+	</header> <!-- cabecera -->
+
+	<section id="nosotros" class="espaciado">
+		<div class="contenedor">
+			<h3>¡No espere más!</h3><br>
+			<div class="fila">
+				<!-- columna izquierda -->
+				<div class="columna">
+					<h2>Pilotos <br>
+					Expertos y bien <br>
+					Capacitados</h2>
+				</div><!-- columna izquierda-->
+
+				<!-- columna media -->
+				<div class="columna">
+					<p>Cualquier destino del mundo está al alcance de su bolsillo en nuestra empresa. Ya no espere más, le ofreceremos una comodidad y atención de primera en nuestras instalaciones. Podrá sentirse seguro y relajado. La empresa cuenta con los siguientes servicios:</p>
+				</div><!-- columna media -->
+	 
+	 			<!-- columna derecha -->
+				<div class="columna">
+					<ul>
+						<br>
+						<li>Asientos cómodos y reclinables</li>
+						<li>Personal de atención</li>
+						<li>Primeros Auxilios</li>
+						<li>Acceso a nuestros aperitivos</li>
+					</ul><!-- fin lista-->
+				</div><!-- columna derecha -->
+			</div><!-- fila -->
+		</div><!-- contenedor -->
+	</section><!-- nosotros -->
+
+	<section id="proposito" class="espaciado">
+		<div class="contenedor">
+			<div class="fila">
+				<!-- columna izquierda -->
+				<div class="columna">
+					<img src="imagenes/proposito1.jpg">
+				</div><!-- columna izquierda -->
+				<!-- columna central -->
+				<div class="columna">
+					<h2> <br> "Nuestro propósito es mantenernos cerca de las agencias de viajes todo el tiempo"</h2>
+				</div><!-- columna central -->
+				<!-- columna derecha -->
+				<div class="columna">
+					<img src="imagenes/proposito2.jpg">
+				</div><!-- columna derecha -->
+			</div> <!-- fila -->
+		</div> <!-- contenedor -->
+	</section>
+
+	<section id="mision" class="espaciado">
+		<div class="contenedor">
+			<div class="fila">
+				<!-- columna izquierda -->
+				<div class="columna">
+					<h2>Misión</h2>
+					<p>"Transportamos sueños entregando lo mejor de nosotros para lograr la 
+						preferencia de clientes y comunidades, construyendo una empresa sustentable
+						donde nos encante trabajar"</p>
+				</div><!-- columna izquierda -->
+				<!-- columna derecha -->
+				<div class="columna">
+					<h2>Visión</h2>
+					<p>"Ser una de las 10 mejores líneas aéreas del mundo"</p>
+				</div><!-- columna derecha -->
+			</div> <!-- fila -->
+		</div> <!-- contenedor -->
+	</section> <!-- proposito -->
+
+	<section id="lugares" class="espaciado">
+		<div class="contenedor">
+			<h2>Viaje al rededor del mundo</h2>
+			<div class="fila">
+				<div class="columna">
+					<img src="imagenes/caribe.jpg" class="ajuste_img">
+					<h4>El Caribe</h4>	
+				</div> <!-- columna -->
+				<div class="columna">
+					<img src="imagenes/cancun.jpg" class="ajuste_img">
+					<h4>Islas Cancún</h4>	
+				</div> <!-- columna -->
+				<div class="columna">
+					<img src="imagenes/machu.jpg" class="ajuste_img">
+					<h4>Machu Picchu</h4>	
+				</div> <!-- columna -->
+				<div class="columna">
+					<img src="imagenes/dubai.jpg" class="ajuste_img">
+					<h4>Dubai</h4>	
+				</div> <!-- columna -->		
+				<div class="columna">
+					<img src="imagenes/qatar.jpg" class="ajuste_img">
+					<h4>Doha</h4>	
+				</div> <!-- columna -->	
+			</div> <!-- fila -->
+			<div class="fila">
+				<marquee id="marquesina" behavior="scroll" direction="left">
+					NO ESPERES MÁS, SE ACABARÁN LOS BOLETOS!
+				</marquee><!-- fin marq -->
+			</div><!-- fin fila-->
+		</div><!-- fin contenedor-->
+	</section><!-- fin section -->
+
+	<section id="tabla" class="espaciado">
+		<div class="contenedor">
+			<div class="fila">
+				<h2>Catálogo de Viajes</h2>
+				</div>
+			<div class="fila">
+				<table class="tabla">
+					<thead>
+						<th>Recorrido</th>
+						<th>Costo</th>
+						<!-- <th></th> -->
+						<th>Duración</th>
+						<th>Hotel</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Todo el Caribe</td>
+							<td class="center">100$</td>
+							<td class="center">5 días y 4 noches</td>
+							<td>Trivago</td>
+						</tr><!-- 1 -->
+						<tr>
+							<td>Islas de Cancún</td>
+							<td class="center">80$</td>
+							<td class="center">4 días y 4 noches</td>
+							<td>Cozumel</td>
+						</tr><!-- 2 -->
+						<tr>
+							<td>Cusco - Macchu Picchu</td>
+							<td class="center">59$</td>
+							<td class="center">6 días y 5 noches</td>
+							<td>Antarki Guest House</td>
+						</tr><!-- 3 -->
+						<tr>
+							<td>Dubai</td>
+							<td class="center">110$</td>
+							<td class="center">3 días y 4 noches</td>
+							<td>Ghaya Grand Hotel</td>
+						</tr><!-- 4 -->
+						<tr>
+							<td>Doha, Qatar</td>
+							<td class="center">150$</td>
+							<td class="center">7 días y 6 noches</td>
+							<td>Golden Ocean Hotel</td>
+						</tr><!-- 5 -->
+					</tbody><!-- fin cuerpoT-->
+				</table><!-- fin tabla-->
+			</div> <!-- fila -->
+		</div> <!-- contenedor -->
+	</section> <!-- tabla -->
+
+	<section id="ubicanos" class="espaciado">
+			<h2>Ubicanos</h2>
+			<div class="mapa">
+				<iframe class="ajuste_mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.130551530245!2d-77.112036!3d-12.0240527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f75ae97fb12652c!2sAeropuerto%20Internacional%20Jorge%20Ch%C3%A1vez!5e0!3m2!1ses-419!2spe!4v1663945153057!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div><!-- fin mapa -->
+		</section><!-- finde seccion contactanos  -->
+
+	<!-- seccion de pruebas -->
+	<section id="redes" class="espaciado"> <!-- testing embeds -->
+		<div class="contenedor">
+			<div class="fila">
+				<h2>Puede ver más información</h2>
+			</div><!-- fin fila-->
+			<div class="fila">
+				<!-- <div class="columna"> -->
+					<!-- <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-dnt="true" data-theme="dark"><p lang="qme" dir="ltr"> <a href="https://t.co/l30T9D6PXW">pic.twitter.com/l30T9D6PXW</a></p>&mdash; KwellCat (@PhinidSyv) <a href="https://twitter.com/PhinidSyv/status/1561766732665982977?ref_src=twsrc%5Etfw">August 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+				<!--</div> fin columna -->
+				<div class="columna">
+					<!-- Con la misma logica de como plasmar una url en nuestra pagina web 
+						que apredimos capturando de google maps, lo realizamos de la misma forma en YOUTUBE 
+						para mostrar un video simplemente ponemos compartir y seleccionamos incorporar
+						que tiene como logo de programacion web (<>) -->
+
+						<!--modificamos el ancho y alto del codigo para que se adapte a su contenedor 
+						 con la clase .ajuste_img  -->
+
+					<iframe class="ajuste_redes" src="https://www.youtube.com/embed/LL1jjYCQVlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div> <!-- fin columna -->
+				<div class="columna">
+					<iframe class="ajuste_redes" src="https://www.youtube.com/embed/3YkNp1KEnZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div><!-- fin columna -->
+				<div class="columna">
+					<iframe class="ajuste_redes" src="https://www.youtube.com/embed/FfzsMBY3Wm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div><!-- fin columna -->
+				</div> <!-- fin fila -->
+		</div> <!-- fin contenedor-->
+	</section> <!-- Fin seccion -->
+
+	<footer id="pie">
+		<div class="fila">
+			<div class="contenedor">
+				<div class="fila">	
+					<h3>Contactanos:</h3>
+				</div><!-- fin fila-->
+				<div class="fila">
+					<div class="columna">
+						&copy; 2022 - Cloudy Airline <br>
+						Síguenos en <a href="https://www.facebook.com/aeropuertojorgechavez" 
+						target="_blank">Facebook</a>
+						<p>viserfly@gmail.com <br>
+						+123-456-7890</p>
+					</div><!-- fin columna-->
+				</div><!-- fin fila-->
+			</div><!-- contenedor -->
+		</div> <!-- fin fila-->
+	</footer><!-- pie -->
+
+
+</body>
+</html>
