@@ -1,0 +1,62 @@
+/* Pantalla de laptop y desktop */
+@media screen and (max-width: 1200px){
+    .contenedor{
+        max-width: 90%;
+    }
+
+    #cabecera img{
+        width: 70%;
+    }
+
+    #proposito .fila{
+        flex-direction: column;
+    }
+
+    #proposito img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        max-width: 95%;
+    }
+
+    #marquesina{
+        font-size: 24px;
+    }
+
+    #redes .fila{
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+
+    #redes .columna{
+        flex-basis: 40%;
+        max-width: 40%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu_barra li a{
+        padding: 20px 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contenedor{
+        max-width: 100%;
+    }
+
+    #cabecera .contenedor{
+        max-width: 95%;
+    }
+
+    #nosotros .contenedor{
+        font-size: 0.8em;
+    }
+}
