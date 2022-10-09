@@ -121,6 +121,8 @@ Selector de estilo ID
 	background-color: #000;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* Todos los h3 en pie de pagina aumentarán de tamaño*/
@@ -132,6 +134,20 @@ Selector de estilo ID
 #pie .contenedor {
 	text-align: left;
 	font-size: 12px;
+}
+
+#pie .fila {
+	/* hacer copyright der y iconos izq  */
+	justify-content: space-evenly;
+}
+
+#pie a{
+	/* agrandar el tamaño de los enlaces */
+	font-size: 20px;
+}
+
+#pie h3{
+	font-size: 17px;
 }
 
 /*Añade bordes a las tablas*/
@@ -326,3 +342,6 @@ Selector de estilo CLASS
 	background-color: #5BA9D9;
 	color: tomato;
 }
+
+
+
