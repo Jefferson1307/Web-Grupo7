@@ -3,7 +3,8 @@
 <head>
 	<title>Cloudy Airline</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" href="css/responsive.css">
+
+	<link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon"> 
 </head>
 <!-- <body background="imagenes/vuelo.png"> -->
 <body>
@@ -11,24 +12,6 @@
 	<audio autoplay loop>
 		<source src="sonido/audio-web.mp3" type="audio/mp3"> <!-- type busca el code de sonido -->
 	</audio><!-- fin audio-->
-
-	
-		<!-- barra de menu principal -->
-
-		<nav id="menu">
-			<div class="contenedor">
-				<ul class="menu_barra">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="#nosotros">Sobre Cloud</a></li>
-					<li><a href="#mision">Mision y Vision</a></li>
-					<li><a href="#lugares">Destinos</a></li>
-					<li><a href="#ubicanos">Ubicanos</a></li>
-					<li><a href="#pie">Contactanos</a></li>
-				</ul><!--Fin menu barra-->
-			</div> <!-- fin contenedor-->
-		</nav>
-		<!--Fin menu -->
-	
 
 	<header id="cabecera">
 		<div class="contenedor">
@@ -43,7 +26,7 @@
 			</div><!-- Fila -->
 					
 		</div><!-- contenedor -->
-	</header> <!-- cabecera -->
+			</header> <!-- cabecera -->
 
 	<section id="nosotros" class="espaciado">
 		<div class="contenedor">
@@ -202,6 +185,54 @@
 			<div class="mapa">
 				<iframe class="ajuste_mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.130551530245!2d-77.112036!3d-12.0240527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f75ae97fb12652c!2sAeropuerto%20Internacional%20Jorge%20Ch%C3%A1vez!5e0!3m2!1ses-419!2spe!4v1663945153057!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div><!-- fin mapa -->
+
+			<div class="contenedor">
+				<div class="fila"> 
+					<div class="columna">
+						<img src="imagenes/contactanoss.jpg" class="ajuste_img">
+					</div> <!-- columna --> 
+
+					<div class="columna">
+						<form id="formulario_contacto" action="grabar_contacto.php" method="post"> 
+							<div class="entrada">
+								<h3>Quiero recibir información</h3>
+								<input type="text" placeholder="Nombre" class="campo" required> 
+							</div>
+							<div class="entrada">
+								<input type="text" placeholder="Apellidos" class="campo" required>
+							</div>
+							<div class="entrada">
+								<input type="email" placeholder="Correo electrónico" class="campo" required>
+							</div>
+							<div class="entrada">
+								<input type="tel" placeholder="Número de celular" class="campo" required>
+							</div>
+							<div class="entrada"> 
+								<select class="campo" required> 
+									<option value="" selected hidden>Destino</option> 
+									<option value="1">El Caribe</option>
+									<option value="2">Islas de Cancún</option>
+									<option value="3">Cusco - Macchu Picchu</option>
+									<option value="4">Dubai</option>
+									<option value="5">Doha, Qatar</option>
+								</select>
+							</div>
+	
+							<p>
+								<input type="checkbox" name="acepto" required>
+								He leído y acepto los <a href="#">Términos y condiciones de privacidad</a>
+							</p>
+	
+							<p>
+								<input class="boton-enviar" type="submit" value="Enviar"> <!-- submit es para enviar los datos -->
+							</p>
+	
+						</form>
+	
+					</div> <!-- columna --> 
+
+				</div> <!-- fila -->
+			</div> <!-- contenedor --> 
 		</section><!-- finde seccion contactanos  -->
 
 	<!-- seccion de pruebas -->
@@ -253,15 +284,6 @@
 			</div><!-- contenedor -->
 		</div> <!-- fin fila-->
 	</footer><!-- pie -->
-
-	<section>
-		<div>
-			Hola mundo
-			<div class="practica">
-				xdxd
-			</div>
-		</div>
-	</section>
 
 </body>
 </html>

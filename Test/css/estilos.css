@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-html{
-	scroll-behavior: smooth;
-}
-
 * {
 	/*Elimina los márgenes y espaciados predeterminados*/
 	margin: 0;
@@ -104,7 +100,7 @@ Selector de estilo ID
 
 /* Efectos al fondo en mision */
 #mision{
-	background-color: #d7d9d9;
+	background-color: #c4c4c4;
 	color: #000;
 }
 
@@ -171,22 +167,38 @@ Selector de estilo ID
 
 /* Efectos al fondo en tabla */
 #tabla {
-	background-color: #fff;
+	background-color: #FFF;
 	color: #000;
 }
 
 /* Efectos al fondo en ubicanos */
 #ubicanos {
-	background-color: rgb(68, 85, 94);
+	background-color: rgb(241,243, 244);
 	color: #000;
 }
 
-/*ajustes  de la seccion menu*/
-#menu {
-	background-color: rgb(43, 43, 43);
-	color: rgb(255, 255, 255);
-	/*Grosor*/
-	font-weight: 400;
+#contactanos {
+    background-color: #FFF;
+}
+
+#formulario_contacto {
+    padding: 10px 30px; 
+    /*box-shadow: 5px 3px 10px 0px rgba(24,41,64,0.8); */
+	box-shadow: 10px 10px 5px 11px rgba(98, 103, 180, 0.20);
+}
+
+#formulario_contacto h3 {
+    background-color: rgb(6, 83, 184);
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#formulario_contacto p {
+    text-align: center;
 }
 
 /*-----------------------
@@ -279,35 +291,35 @@ Selector de estilo CLASS
 	padding-bottom: 50px;
 }
 
-/*Efectos para el menu*/
-.menu_barra	{
-	list-style-type: none;
-	
-	/* activar flexbox */
-	display: flex;
-	flex-direction: row;
-
-	/* espacio proporcional entre las opciones del menu */
-	justify-content: space-evenly;
+.entrada {
+    margin: 10px 0px;
 }
 
-
-/*Efectos para list item*/
-.menu_barra li a{
-	display: block; /*Convierte un elemento de linea en un contenedor*/
-	/*padding-top: 20px;
-	padding-bottom: 20px;*/
-	padding: 20px;
-	border-bottom: 3px solid transparent;
-	color: #99baf8;
-	text-decoration: none;
+.campo {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid #c4c4c4;
+	border-right: 1px solid #c4c4c4;
+    font: inherit; 
 }
 
-/*Efecto de seleccion de list item*/
-.menu_barra li a:hover{
-	background-color: #c4c4c4;
-	color: #000;
-	border-bottom: 3px solid #000;
+.boton-enviar {
+    background-color: rgb(6, 83, 184);
+    color: #fff;
+    padding: 15px 0px;
+    width: 20%; 
+    cursor: pointer; 
+    font: inherit; 
+    border: none; 
+    border-radius: 35px;
+    transition: all 1s; 
+}
+
+/*hover hace una caja cuando selecciona*/
+.boton-enviar:hover {
+    background-color: #000;
 }
 
 .practica {
