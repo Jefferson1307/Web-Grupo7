@@ -322,9 +322,7 @@ Selector de estilo CLASS
     background-color: #000;
 }
 
-
-
-
-
-
-
+.practica {
+	background-color: #5BA9D9;
+	color: tomato;
+}
