@@ -217,6 +217,11 @@ Selector de estilo ID
     text-align: center;
 }
 
+#menu {	
+	background-color: rgb(43, 43, 43);
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+}
 /*-----------------------
 Selector de estilo CLASS
 ------------------------*/
@@ -343,5 +348,31 @@ Selector de estilo CLASS
 	color: tomato;
 }
 
+/*efecto para el menu*/
+.menu_barra {
+	list-style-type: none;
 
+	/*activar flexbox*/
+	display: flex;
+	flex-direction: row;
+
+	/*espacio proporcionado entre las opciones del menu*/
+	justify-content: space-evenly;
+}
+
+/*efectos list item del manu*/
+.menu_barra li a {
+	display: block;/*convierte un elemento de linea en un contenedor*/
+	padding: 20px;
+	border-bottom: 3px solid transparent;
+	color: #99baf8;
+	text-decoration: none;
+}
+
+/*efectos de seleccion list item*/
+.menu_barra li a:hover {
+	background-color: #c4c4c4;
+	color: #000;
+	border-bottom: 3px solid #000	;
+}
 
