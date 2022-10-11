@@ -19,6 +19,11 @@ body {
 }
 
 
+a {
+	color: #7fff00;
+	text-decoration: none;
+}
+
 /*Aplicar a todos los h1 los siguientes estilos*/
 h1{
 	font-size: 72px;
@@ -144,6 +149,12 @@ Selector de estilo ID
 #pie a{
 	/* agrandar el tamaño de los enlaces */
 	font-size: 20px;
+	/* color: rgb(255, 254, 0); */
+}
+
+a:hover {
+	/* efecctos  */
+	color: rgb(255, 245, 0);
 }
 
 #pie h3{
@@ -189,15 +200,18 @@ Selector de estilo ID
 
 /* Efectos al fondo en ubicanos */
 #ubicanos {
+	/* background-color: rgb(207,224,252); */
+	/* background-color: #fff; */
 	background-color: rgb(241,243, 244);
 	color: #000;
 }
 
 #contactanos {
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 #formulario_contacto {
+	background-color: #fff;
     padding: 10px 30px; 
     /*box-shadow: 5px 3px 10px 0px rgba(24,41,64,0.8); */
 	box-shadow: 10px 10px 5px 11px rgba(98, 103, 180, 0.20);
