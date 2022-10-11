@@ -8,6 +8,11 @@
 	padding: 0;
 }
 
+html {
+	/* para suavisar la velocidad de transpase  */
+	scroll-behavior: smooth; /* reduce la velocidad del scroll, para que no sea brusco*/
+}
+
 /*-----------------------
 Selector de estilo HTML
 ------------------------*/
