@@ -44,6 +44,7 @@
     .menu_barra li a{
         padding: 20px 5px;
         text-align: center;
+        
     }
 
 }
@@ -57,13 +58,28 @@
         max-width: 95%;
     }
 
+    #cabecera img{
+        width: 100%;
+    }
+
     #nosotros .contenedor{
         font-size: 0.8em;
+        
+    }
+
+    #nosotros .fila{
+        flex-direction: column-reverse;
+    }
+
+    #nosotros li{
+        padding-bottom: 10px;
     }
     
     .menu_barra li a {
         padding: 21px o 05px;
+        font-size: 0.8em;
     }
+
 
     #lugares .fila{
         flex-direction: column-reverse;
@@ -72,5 +88,22 @@
         padding-left: 120px;
         width: 50%;
         font-size: 00.8em;
+    }
+
+    #ubicanos .fila{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #ubicanos img{
+        width: 80%;
+    }
+
+    #pie{
+        text-align: center;
+    }
+    #pie h3{
+        padding-left: 30px;
+        font-size: 1em;
     }
 }

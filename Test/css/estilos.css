@@ -2,6 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+	--fuente-principal:'Poppins', sans-serif;
+	--fuente-secundaria:'Roboto', sans-serif;
+
+	--color-celeste:#40CFFF;
+	--color-verde:#7fff00;
+	--color-blanco:#fff;
+	--color-negro:#000;
+	--color-azulsuave:#5BA9D9;
+	--color-grisclaro:#c4c4c4;
+	--color-grisoscuro:#A0BDC1;
+	--color-grisoscuro2:rgb(177, 200, 230);
+	--color-azulopaco:#011629;
+	--color-azulclaro:#99baf8;
+	--color-naranja:rgba(255, 99, 71, 0.986);
+	--color-amarillo:rgb(255, 245, 0);
+	--color-azul:rgb(6, 83, 184);
+}
+
 * {
 	/*Elimina los márgenes y espaciados predeterminados*/
 	margin: 0;
@@ -20,12 +39,12 @@ body {
 	/*font-family: Trebuchet MS; /*Tipo de letra*/
 	line-height: 1.5; /*Interlineado*/
 	/* background-image: url(imagenes/vuelo.png); */
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--fuente-principal);
 }
 
 
 a {
-	color: #7fff00;
+	color: var(--color-verde);
 	text-decoration: none;
 }
 
@@ -33,7 +52,7 @@ a {
 h1{
 	font-size: 72px;
 	padding-bottom: 5px;
-	color: #40CFFF;
+	color: var(--color-celeste);
     font-weight: 800;
 }
 
@@ -53,7 +72,7 @@ h3 {
 /* Añade espacio en todos los párrafos y la fuente */
 p{
 	padding-bottom: 10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fuente-secundaria);
 }
 
 /*-----------------------
@@ -68,8 +87,8 @@ Selector de estilo ID
 
 /* En cabecera, aplicamos color de fondo y texto, además de agrandar la caja */
 #cabecera {
-	background-color: #fff; /*Color negro*/
-	color: #000; /*Color blanco*/
+	background-color: var(--color-blanco); /*Color negro*/
+	color: var(--color-negro); /*Color blanco*/
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
@@ -79,7 +98,7 @@ Selector de estilo ID
 	/*background-color: rgb(29, 38, 48);*/
 	background-image: linear-gradient(rgba(5, 7, 12, 0.75),
 	rgba(5, 7, 12, 0.75)), url(../imagenes/fondo.jpg); /*el liner opaca la imagen de fondo*/
-	color: #fff;
+	color: var(--color-blanco);
 }
 
 /* A los h3 de nosotros, los centramos y aumentamos tamaño */
@@ -98,9 +117,9 @@ Selector de estilo ID
 #proposito{
 	/* background-color: #92D0DB; */
 	/*background-color: rgb(116, 148, 163);*/
-	background-color: #5BA9D9;
+	background-color: var(--color-azulsuave);
 	/* color: #fff; */
-	color: #000;
+	color: var(--color-negro);
 }
 
 /* Todas las imagenes en proposito ocuparan todo el espacio de su contenedor */
@@ -110,27 +129,27 @@ Selector de estilo ID
 
 /* Efectos al fondo en mision */
 #mision{
-	background-color: #c4c4c4;
-	color: #000;
+	background-color: var(--color-grisclaro);
+	color: var(--color-negro);
 }
 
 /* Centra el texto en sus cajas y cambia la fuente */
 #mision p{
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--fuente-secundaria);
 }
 
 /* Efectos al fondo en lugares */
 #lugares {
-	background-color: #A0BDC1;
-	color: #000;
+	background-color: var(--color-grisoscuro);
+	color: var(--color-negro);
 }
 
 /* Efectos al pie de pagina y cambio de fuente */
 #pie{
-	background-color: #000;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	background-color: var(--color-negro);
+	color: var(--color-blanco);
+	font-family: var(--fuente-secundaria);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -159,7 +178,7 @@ Selector de estilo ID
 
 a:hover {
 	/* efecctos  */
-	color: rgb(255, 245, 0);
+	color: var(--color-amarillo);
 }
 
 #pie h3{
@@ -168,21 +187,45 @@ a:hover {
 
 /*Añade bordes a las tablas*/
 #tabla tbody tr td{
-	border: 1px solid #000;
+	border: 1px solid var(--color-negro);
+}
+
+#scroll-arriba{
+	/* Posicionar botonn */
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	color: var(--color-negro);
+	background-color: var(--color-blanco);
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	border: var(--color-azul) 2px solid;
+
+	font-size: 18px;
+	transition: all 0.5s ease-in-out;
+}
+
+#scroll-arriba:hover{
+	background-color: var(--color-grisclaro);
+	box-shadow: 5px 3px 10px 0px rgba(24,41,64,0.8);
+	transform: translateY(-5px);
 }
 
 /*En la cabecera de la tabla, añade color y más espacio*/
 .tabla thead tr th{
 	text-align: left;
-	background-color: #000;
-	color: #fff;
+	background-color: var(--color-negro);
+	color: var(--color-blanco);
 	padding: 8px;
 }
 
 /*Aplica efectos en redes*/
 #redes {
-	background-color: rgb(6, 83, 184);
-	color: #fff;
+	background-color: var(--color-azul);
+	color: var(--color-blanco);
 	width: auto;
 }
 
@@ -191,7 +234,7 @@ a:hover {
 	/* tamaño  */
 	font-size: 40px;
 	/* color */
-	color: #011629;
+	color: var(--color-azulopaco);
 	/* espaciado al contenedor */
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -199,32 +242,32 @@ a:hover {
 
 /* Efectos al fondo en tabla */
 #tabla {
-	background-color: #FFF;
-	color: #000;
+	background-color: var(--color-blanco);
+	color: var(--color-negro);
 }
 
 /* Efectos al fondo en ubicanos */
 #ubicanos {
 	/* background-color: rgb(207,224,252); */
 	/* background-color: #fff; */
-	background-color: rgb(241,243, 244);
-	color: #000;
+	background-color: var(--color-blanco);
+	color: var(--color-negro);
 }
 
 #contactanos {
-    background-color: #fff;
+    background-color: var(--color-blanco);
 }
 
 #formulario_contacto {
-	background-color: #fff;
+	background-color: var(--color-blanco);
     padding: 10px 30px; 
     /*box-shadow: 5px 3px 10px 0px rgba(24,41,64,0.8); */
 	box-shadow: 10px 10px 5px 11px rgba(98, 103, 180, 0.20);
 }
 
 #formulario_contacto h3 {
-    background-color: rgb(6, 83, 184);
-    color: #fff;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     font-size: 30px;
     padding: 10px 0;
     text-align: center;
@@ -237,8 +280,8 @@ a:hover {
 }
 
 #menu {	
-	background-color: rgb(43, 43, 43);
-	color: rgb(255, 255, 255);
+	background-color: var(--color-negro);
+	color: var(--color-blanco);
 	font-weight: 400;
 }
 /*-----------------------
@@ -285,7 +328,7 @@ Selector de estilo CLASS
 /* Efectos para todas las clases tabla que usaremos */
 .tabla{
 	width: 100%;
-	border: 5px solid #fff;
+	border: 5px solid var(--color-blanco);
 	/*padding: 5px;*/
 }
 
@@ -303,8 +346,8 @@ Selector de estilo CLASS
 
 /* Efectos para todo el cuerpo en las tablas */
 .tabla tbody td:hover{
-	padding-bottom: solid 1px rgb(255, 255, 255);
-	background: rgb(177, 200, 230);
+	padding-bottom: solid 1px var(--color-blanco);
+	background: var(--color-grisoscuro2);
 }
 
 .prueba{
@@ -340,14 +383,14 @@ Selector de estilo CLASS
     padding: 10px 0px;
     border: none;
     outline: none; 
-    border-bottom: 1px solid #c4c4c4;
-	border-right: 1px solid #c4c4c4;
+    border-bottom: 1px solid var(--color-grisclaro);
+	border-right: 1px solid var(--color-grisclaro);
     font: inherit; 
 }
 
 .boton-enviar {
-    background-color: rgb(6, 83, 184);
-    color: #fff;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     padding: 15px 0px;
     width: 20%; 
     cursor: pointer; 
@@ -359,12 +402,12 @@ Selector de estilo CLASS
 
 /*hover hace una caja cuando selecciona*/
 .boton-enviar:hover {
-    background-color: #000;
+    background-color: var(--color-negro);
 }
 
 .practica {
-	background-color: #5BA9D9;
-	color: tomato;
+	background-color: var(--color-azulsuave);
+	color: var(--color-naranja);
 }
 
 /*efecto para el menu*/
@@ -384,14 +427,14 @@ Selector de estilo CLASS
 	display: block;/*convierte un elemento de linea en un contenedor*/
 	padding: 20px;
 	border-bottom: 3px solid transparent;
-	color: #99baf8;
+	color: var(--color-azulclaro);
 	text-decoration: none;
 }
 
 /*efectos de seleccion list item*/
 .menu_barra li a:hover {
-	background-color: #c4c4c4;
-	color: #000;
-	border-bottom: 3px solid #000	;
+	background-color: var(--color-grisclaro);
+	color: var(--color-negro);
+	border-bottom: 3px solid var(--color-negro);
 }
 
