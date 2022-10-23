@@ -1,9 +1,4 @@
-// comentario que imprime
-        // alert("Hola Mundo")
-
-        // imprime una caja de texto
-        // var nombre=prompt("Ingrese su Nombre:");
-        // alert("Hola "+nombre+", eres tremendo putito");
+// variables
 var nombre="Jefri Rochambrun";
 var sueldo=3500;
 var estadocivil="s";//c, s, v, d
