@@ -418,7 +418,7 @@ Selector de estilo CLASS
     cursor: pointer; 
     font: inherit; 
     border: none; 
-    border-radius: 35px;
+    border-radius: 20px;
     transition: all 0.5s; 
 }
 
