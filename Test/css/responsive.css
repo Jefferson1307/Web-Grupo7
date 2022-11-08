@@ -25,6 +25,11 @@
     #slider .boton-cbox{
         width: 90%;
     }
+
+    #redes .fila{
+        display: flex;
+	    flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -82,7 +87,10 @@
         text-align: center;
         
     }
-
+    #redes .fila{
+        display: flex;
+	    flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -157,5 +165,9 @@
     #pie h3{
         padding-left: 30px;
         font-size: 1em;
+    }
+    #redes .fila{
+        display: block;
+	    flex-direction: row;
     }
 }
