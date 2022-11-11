@@ -166,8 +166,17 @@
         padding-left: 30px;
         font-size: 1em;
     }
-    #redes .fila{
-        display: block;
-	    flex-direction: row;
+
+    #pie a{
+        font-size: 1em;
     }
+    #redes .fila{
+        display: flex; 
+	    flex-direction: column;
+        align-content: space-around;
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+
+    
 }
