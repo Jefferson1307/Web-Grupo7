@@ -154,7 +154,7 @@
 			</div> <!-- fila -->
 			<div class="fila">
 				<marquee id="marquesina" behavior="scroll" direction="left">
-					NO ESPERES MÁS, SE ACABARÁN LOS BOLETOS!
+					¡NO ESPERES MÁS, SE ACABARÁN LOS BOLETOS!
 				</marquee><!-- fin marq -->
 			</div><!-- fin fila-->
 		</div><!-- fin contenedor-->
@@ -278,7 +278,7 @@
 								<input type="tel" placeholder="Número de celular" class="campo" required>
 							</div>
 							<div class="entrada"> 
-								<select class="campo" required> 
+								<select class="campo" required>
 									<option value="" selected hidden>Destino</option> 
 									<option value="1">El Caribe</option>
 									<option value="2">Islas de Cancún</option>
