@@ -1,17 +1,24 @@
 /*Fuente Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 :root{
 	--fuente-principal:'Poppins', sans-serif;
 	--fuente-secundaria:'Roboto', sans-serif;
+	--fuente-terciaria:'DM Serif Display', serif;
 
 	--color-celeste:#40CFFF;
 	--color-verde:#7fff00;
 	--color-blanco:#fff;
 	--color-negro:#000;
-	--color-azulsuave:#5BA9D9;
-	--color-grisclaro:#c4c4c4;
+	--color-azulado:#222736;
+	--color-azuladoB:#171b26;
+	
+	/* --color-azulsuave:#5BA9D9; */
+	--color-azulsuave:#33bdff;
+	/* --color-grisclaro:#c4c4c4; */
+	--color-grisclaro:rgb(250, 249, 250);
 	--color-grisoscuro:#A0BDC1;
 	--color-grisoscuro2:rgb(177, 200, 230);
 	--color-azulopaco:#011629;
@@ -20,6 +27,8 @@
 	--color-amarillo:rgb(255, 245, 0);
 	--color-azul:rgb(6, 83, 184);
 	--color-celestesuave: rgb(207,224,252);
+
+	--color-gris2:rgb(112,111,112);
 }
 
 * {
@@ -120,17 +129,22 @@ Selector de estilo ID
 	/*background-color: rgb(116, 148, 163);*/
 	background-color: var(--color-azulsuave);
 	/* color: #fff; */
-	color: var(--color-negro);
+	color: var(--color-blanco);
 }
 
 /* Todas las imagenes en proposito ocuparan todo el espacio de su contenedor */
 #proposito img{
 	width: 100%;
+	border-radius: 100%;
+}
+
+#proposito h2{
+	font-family: var(--fuente-terciaria);
 }
 
 /* Efectos al fondo en mision */
 #mision{
-	background-color: var(--color-grisclaro);
+	background-color: var(--color-blanco);
 	color: var(--color-negro);
 }
 
@@ -142,8 +156,8 @@ Selector de estilo ID
 
 /* Efectos al fondo en lugares */
 #lugares {
-	background-color: var(--color-grisoscuro);
-	color: var(--color-negro);
+	background-color: var(--color-azulado);
+	color: var(--color-azulsuave);
 }
 
 /* Efectos al pie de pagina y cambio de fuente */
@@ -235,7 +249,7 @@ a:hover {
 	/* tamaño  */
 	font-size: 40px;
 	/* color */
-	color: var(--color-azulopaco);
+	color: var(--color-blanco);
 	/* espaciado al contenedor */
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -251,8 +265,8 @@ a:hover {
 #ubicanos {
 	/* background-color: rgb(207,224,252); */
 	/* background-color: #fff; */
-	background-color: var(--color-celestesuave);
-	color: var(--color-negro);
+	background-color: var(--color-azulado);
+	color: var(--color-blanco);
 }
 
 #contactanos {
@@ -280,10 +294,11 @@ a:hover {
 
 #formulario_contacto p {
     text-align: center;
+	color:var(--color-negro);
 }
 
 #menu {	
-	background-color: var(--color-negro);
+	background-color: var(--color-azulado);
 	color: var(--color-blanco);
 	font-weight: 400;
 }
@@ -386,6 +401,7 @@ Selector de estilo CLASS
 
 .entrada {
     margin: 10px 0px;
+	
 }
 
 .campo {
@@ -396,6 +412,7 @@ Selector de estilo CLASS
     border-bottom: 1px solid var(--color-grisclaro);
 	border-right: 1px solid var(--color-grisclaro);
     font: inherit; 
+	color:var(--color-gris2);
 }
 
 .boton-enviar {
@@ -456,15 +473,16 @@ Selector de estilo CLASS
 	display: block;/*convierte un elemento de linea en un contenedor*/
 	padding: 20px;
 	border-bottom: 3px solid transparent;
-	color: var(--color-azulclaro);
+	color: var(--color-blanco);
 	text-decoration: none;
 }
 
 /*efectos de seleccion list item*/
 .menu_barra li a:hover {
-	background-color: var(--color-grisclaro);
-	color: var(--color-negro);
+	background-color: var(--color-azuladoB);
+	color: var(--color-azulsuave);
 	border-bottom: 3px solid var(--color-negro);
+	font-size: 15px;
 }
 
 .img_frm {
