@@ -27,7 +27,19 @@ function validacionFormulario(evento) {
         return;
     }
 
-    // Agregar la validación para los apellidos
+    //Apellido
+    var apellido = document.getElementById("txtapellidos").value;
+    if(apellido==null || apellido.length==0) {
+        msjError.innerHTML="El apellido no debe estar vacío";
+        return;
+    }
+
+
+    var regExpLetrasEspacios = /^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$/g;
+    if(regExpLetrasEspacios.test(apellido)==false) {
+        msjError.innerHTML="El apellido sólo debe contener letras y espacios";
+        return;
+    }
 
     // Validar la dirección de correo
     var correo = document.getElementById("txtcorreo").value;
