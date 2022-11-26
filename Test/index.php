@@ -215,28 +215,8 @@
 	<section id="slider" class="espaciado">
 		<div class="contenedor">
 			<div class="fila">
-				<div class="columna">
-					<form id="formulario_confirmar" action="" method="post"> 			
-						<h3>Verifica si eres un alma libre listo para volar con nosotros</h3>
-						<div class="entrada">
-							<input type="checkbox"  id="c1">  Te gusta visitar lugares que no conoces.<br><br>
-							<input type="checkbox"  id="c2">  Disfrutas conociendo nuevas culturas.<br><br>
-							<input type="checkbox"  id="c3">  Quieres relajarte y disfrutar de tu tiempo libre.<br><br>
-							<input type="checkbox"  id="c4">  Te gusta la naturaleza.<br><br>
-							<input type="checkbox"  id="c5">  Quieres visitar a alguien cercano.<br><br>
-							<input type="checkbox"  id="c6">  Quieres compartir con tu familia un ameno momento.<br><br>
-						</div>
-
-						<p>
-							<!-- boton  -->
-							<input type="submit" value="Confirmar" class="boton-cbox">
-						</p><!-- fin parrafo -->
-
-						<!-- para el mensaje  -->
-						<p id="uwu"></p>
-						<p id="nota"></p>
-					</form><!-- fin formulario  -->
-				</div><!-- fin columna  -->
+				
+				
 
 				<div class="columna">
 					<div class="bxslider">
@@ -263,22 +243,22 @@
 					</div> <!-- columna --> 
 
 					<div class="columna">
-						<form id="formulario_contacto" action="grabar_contacto.php" method="post"> 
+						<form id="formulario_contacto" method="post"> 
 							<div class="entrada">
 								<h3>Quiero recibir información</h3>
-								<input type="text" placeholder="Nombre" class="campo" required> 
+								<input type="text" placeholder="Nombre" id="txtnombres" name="txtnombres" class="campo"> 
 							</div>
 							<div class="entrada">
-								<input type="text" placeholder="Apellidos" class="campo" required>
+								<input type="text" placeholder="Apellidos" id="txtapellidos" name="txtapellidos" class="campo">
 							</div>
 							<div class="entrada">
-								<input type="email" placeholder="Correo electrónico" class="campo" required>
+								<input type="email" placeholder="Correo electrónico" id="txtcorreo" name="txtcorreo" class="campo">
 							</div>
 							<div class="entrada">
-								<input type="tel" placeholder="Número de celular" class="campo" required>
+								<input type="tel" placeholder="Número de celular" id="txtcelular" name="txtcelular" class="campo">
 							</div>
 							<div class="entrada"> 
-								<select class="campo" required>
+								<select class="campo" id="lstdestino" name="lstdestino">
 									<option value="" selected hidden>Destino</option> 
 									<option value="1">El Caribe</option>
 									<option value="2">Islas de Cancún</option>
@@ -289,16 +269,21 @@
 							</div>
 	
 							<p>
-								<input type="checkbox" name="acepto" required>
+								<input type="checkbox" id="chkacepto" name="acepto">
 								He leído y acepto los <a href="#">Términos y condiciones de privacidad</a>
 							</p>
 	
 							<p>
-								<input class="boton-enviar" type="submit" value="Enviar"> <!-- submit es para enviar los datos -->
+								<input class="boton-enviar" type="submit" value="Enviar" onclick="validacionFormulario()"> <!-- submit es para enviar los datos -->
 							</p>
+
+							<p id="msjError" class="msjError">
+                        	</p>
 	
 						</form>
-	
+						<?php
+                        include("registro.php");
+                    ?>
 					</div> <!-- columna --> 
 
 				</div> <!-- fila -->
@@ -390,5 +375,8 @@
 
 	<!-- js para el slider  -->
 	<script type="text/javascript" src="scripts/slider.js"></script>
+
+	<!-- Llamado de js para validar-->
+	<script src="scripts/valida-formulario.js"></script>
 </body>
 </html>
