@@ -216,7 +216,28 @@
 		<div class="contenedor">
 			<div class="fila">
 				
-				
+			<div class="columna">
+					<form id="formulario_confirmar" action="" method="post"> 			
+						<h3>Verifica si eres un alma libre listo para volar con nosotros</h3>
+						<div class="entrada">
+							<input type="checkbox"  id="c1">  Te gusta visitar lugares que no conoces.<br><br>
+							<input type="checkbox"  id="c2">  Disfrutas conociendo nuevas culturas.<br><br>
+							<input type="checkbox"  id="c3">  Quieres relajarte y disfrutar de tu tiempo libre.<br><br>
+							<input type="checkbox"  id="c4">  Te gusta la naturaleza.<br><br>
+							<input type="checkbox"  id="c5">  Quieres visitar a alguien cercano.<br><br>
+							<input type="checkbox"  id="c6">  Quieres compartir con tu familia un ameno momento.<br><br>
+						</div>
+
+						<p>
+							<!-- boton  -->
+							<input type="submit" value="Confirmar" class="boton-cbox">
+						</p><!-- fin parrafo -->
+
+						<!-- para el mensaje  -->
+						<p id="uwu"></p>
+						<p id="nota"></p>
+					</form><!-- fin formulario  -->
+				</div><!-- fin columna  -->
 
 				<div class="columna">
 					<div class="bxslider">
